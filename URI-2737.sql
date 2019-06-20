@@ -1,3 +1,11 @@
+/*
+The manager wants you to show him the name of the lawyer with the most clients, 
+the one with the fewest and the client average considering all lawyers.
+
+OBS: Before presenting the average, show a field called Average to make the report more readable. 
+The average must be presented as an integer.
+*/
+
 (select name, customers_number 
 from lawyers
 order by customers_number desc
