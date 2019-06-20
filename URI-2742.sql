@@ -5,6 +5,8 @@ together with its existence probability (the famous factor N) with three decimal
 Remember that the N factor is calculated by multiplying the omega value by 1,618. 
 The data must be sorted by the least omega value.
 */
+
+
 select life_registry.name, round((life_registry.omega*1.618),3) as "The N Factor"
 from life_registry
 join dimensions on dimensions.id = life_registry.dimensions_id
